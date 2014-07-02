@@ -18,7 +18,7 @@ module Google
       end
 
       def self.file_location
-        "#{Dir.pwd}/lib/data_files/taxonomy.de-DE.txt"
+        File.expand_path('../../data_files/taxonomy.de-DE.txt', File.dirname(__FILE__))
       end
 
       def self.valid?(val)
