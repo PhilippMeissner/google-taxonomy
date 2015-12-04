@@ -5,7 +5,7 @@ module Google
     class Validator
 
       def self.entries(lang = 'de-DE')
-        @@entries ||= convert_entries(lang)
+        @@entries = convert_entries(lang)
       end
 
       def self.convert_entries(lang = 'de-DE')
