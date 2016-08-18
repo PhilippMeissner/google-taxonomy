@@ -23,3 +23,9 @@ Or install it yourself as:
 
     Google::Taxonomy::Validator.valid?("Captain Kirk")
     #=> false
+
+    Google::Taxonomy::Parser.hashed_entries('de-DE')
+    # => {"Baby & Kleinkind"=> {"Baby Badebedarf"=>{"Babybadewannen"=>{} .. }}}
+
+    Google::Taxonomy::Parser.get_next_level('de-DE', ["Baby & Kleinkind", "Baby Badebedarf"])
+    # => {"Babybadewannen"=>{}, "Shampoo-Schutzschilder"=>{}}
