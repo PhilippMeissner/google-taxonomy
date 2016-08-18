@@ -14,7 +14,7 @@ module Google
         end
       end
 
-      def self.get_next_level(categories = [], lang = 'de-DE', hash = hash(lang))
+      def self.get_next_level(lang = 'de-DE', categories = [], hash = hash(lang))
         if categories.blank?
           return hash
         else
@@ -22,7 +22,7 @@ module Google
           if next_level.blank?
             return hash
           else
-            get_next_level(categories.drop(1), lang, next_level)
+            get_next_level(lang, categories.drop(1), next_level)
           end
         end
       end
