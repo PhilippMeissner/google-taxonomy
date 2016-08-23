@@ -16,11 +16,11 @@ module Google
 
       def self.get_next_level(categories = [], lang = 'de-DE', hash = hash(lang))
         if categories.blank?
-          return hash
+          return hash.keys
         else
           next_level = hash["#{categories[0]}"]
           if next_level.blank?
-            return hash
+            return next_level.keys
           else
             get_next_level(categories.drop(1), lang, next_level)
           end
