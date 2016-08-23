@@ -20,7 +20,7 @@ module Google
         else
           next_level = hash["#{categories[0]}"]
           if next_level.blank?
-            return next_level.keys
+            return next_level.nil? ? "Error. The category #{categories[0]} was not found!" : next_level.keys
           else
             get_next_level(categories.drop(1), lang, next_level)
           end
