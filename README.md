@@ -1,6 +1,6 @@
 # GoogleTaxonomy
 
-A gem to help you with the google taxonomy. Only works for German currently.
+A gem to help you with the google taxonomy. Supports DE, GB, US and NL taxonomies at the moment.
 
 ## Installation
 
