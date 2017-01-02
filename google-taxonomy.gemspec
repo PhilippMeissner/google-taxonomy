@@ -6,7 +6,7 @@ require 'google/taxonomy/version'
 Gem::Specification.new do |spec|
   spec.name          = "google-taxonomy"
   spec.version       = Google::Taxonomy::VERSION
-  spec.authors       = ["Hendrik Kleinwaechter"]
+  spec.authors       = ["Hendrik Kleinwaechter", "Christian Semmler", "Philipp Meissner"]
   spec.email         = ["hendrik.kleinwaechter@gmail.com"]
   spec.summary       = %q{Working with the google taxonomy}
   spec.description   = %q{Working with the google taxonomy}
